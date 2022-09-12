@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'M PLUS 1', sans-serif;
+    color: black;    
+}
+.desktop{
+    display: none;
+}
+.right{
+    padding: 0;
+    right: 0;
+    position: fixed;
+}
+@media (min-width:1500px){
+    .desktop{
+        display: initial;
+    }
+    .men {
+        margin-right: .3em;
+    }
+    .men2{
+        margin-right: 4em;
+    }
+}
+header{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    padding: 5px 20px;
+    position: fixed;
+}
+a.logo{
+    width: 100px;
+    height: 12px;
+    color: inherit
+}
+header a{
+    color: inherit;
+}
+header nav a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+header nav.centre{
+    text-align: center;
+}
+.centre-nav{
+    margin-left: 20em;
+    margin-right: 15em;
+}
+section{
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+}
+.content{
+    width: 100%;
+    height: 100vh;
+    padding-top: 11vh;
+    padding-bottom: 15vh;
+    text-align: center;
+}
+.content h1{
+    font-size: 3rem;
+}
+.content a{
+    color: inherit;
+}
+.buttons a{
+    display: block;
+    background-color: #eee;
+    color: inherit;
+    padding: 12px 40px;
+    border-radius: 4.5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.buttons a:first-child{
+    background-color: #444;
+    color: #eee;
+}
+.buttons {
+    padding-top: 50vh;
+    display: grid;
+    row-gap: 10px;
+    font-weight: bolder;
+}
+@media (min-width: 1000px){
+    .buttons{
+        max-width: 800px;
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+    }
+}
+.buttonsacc a{
+    display: block;
+    background-color: #444;
+    color: #eee;
+    padding: 12px 40px;
+    border-radius: 4.5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.buttonsacc {
+    padding-top: 60vh;
+    display: grid;
+    row-gap: 10px;
+    margin-left: 40em;
+    margin-right: 40em;
+    font-weight: bolder;
+    margin: 25px 40em auto;
+}
+.footer{
+    text-align: center;
+    font-size: small;
+    font-weight: bold;
+}
+.footer-header{
+    display:inline;
+}
+.footer a{
+    color: black;
+    text-decoration: none;
+    padding: .5em;
+}
+.section-foot{
+    height: 2vh;
+    background-size: cover;
+    background-position: center center;
+}
